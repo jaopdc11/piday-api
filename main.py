@@ -1,7 +1,16 @@
 from fastapi import FastAPI
 from mpmath import mp
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 DIGITOS_PI = 10_000
 mp.dps = DIGITOS_PI + 2
