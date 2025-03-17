@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DIGITOS_PI = 10_000
+DIGITOS_PI = 50_000
 mp.dps = DIGITOS_PI + 2
 pi_str = str(mp.pi)[2:DIGITOS_PI+2]
 
