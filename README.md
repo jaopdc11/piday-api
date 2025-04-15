@@ -25,7 +25,7 @@ The response will return the first 10,000 digits of Pi in JSON format:
 
 ```json
 {
-  "pi": "3.14159... (10,000 digits)"
+  "pi": "3.14159... (100,000 digits)"
 }
 ```
 
